@@ -1,0 +1,35 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0d0e12;
+  --surface: #16181f;
+  --surface2: #1e212b;
+  --border: #2a2d3a;
+  --accent: #6ee7b7;
+  --accent2: #818cf8;
+  --text: #e2e8f0;
+  --text-muted: #64748b;
+  --user-bubble: #1e3a5f;
+  --bot-bubble: #1a1d27;
+  --danger: #f87171;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --radius: 12px;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+::selection { background: var(--accent2); color: #fff; }
