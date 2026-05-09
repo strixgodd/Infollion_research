@@ -1,9 +1,11 @@
 
-<!-- gemini chatbot -->
+Gemini chatbot
+
 A minimal yet polished web-based chatbot powered by gemini's API.  
 Supports text conversation, PDF/TXT document upload, image upload, multi-chat sessions, and context tracking — all in-memory with no database.
 
-<!-- Project structure -->
+Project structure
+
 gemini-chatbot/
 ├── backend/               # Node.js + Express API server
 │   ├── server.js          # Main server (routes, Gemini integration, file handling)
@@ -23,7 +25,8 @@ gemini-chatbot/
 │
 └── README.md
 
-<!-- instructinos to get the gemini api key -->
+instructinos to get the gemini api key
+
 1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and generate a free API key.
 2. In the `backend/` directory, create a file called `.env`:
 
@@ -41,15 +44,16 @@ PORT=5000
 Never commit the `.env` file — it's already in `.gitignore`.
 
 
- <!-- How to Install & Run -->
+ How to Install & Run
 
-<!-- Prerequisites -->
+Prerequisites
+
 - **Node.js** v18 or later
 - **npm** v9 or later
 
 
 
- <!-- 1. Clone the repository -->
+ 1. Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/gemini-chatbot.git
@@ -57,7 +61,7 @@ cd gemini-chatbot
 ```
 
 
-<!-- 2. Start the Backend -->
+2. Start the Backend
 
 ```bash
 cd backend
@@ -73,7 +77,7 @@ Backend running at http://localhost:5000
 ```
 
 
-<!-- 3. Start the Frontend -->
+3. Start the Frontend
 
 Open a new terminal tab, then:
 
@@ -86,10 +90,35 @@ npm start
 The React app opens at http://localhost:3000
 
 
+Example Usage
+
+Example 1: Document Q&A
+
+1. Click the 📄 **document button** in the input bar.
+2. Select a PDF or TXT file (e.g. `notes.pdf`).
+3. Type: _"Summarize this document"_ → Gemini summarizes it.
+4. Ask a follow-up: _"What was the third point?"_ → Bot uses document context.
+
+Example 2: Image Analysis
+
+1. Click the 🖼️ **image button** in the input bar.
+2. Select a PNG or JPG file.
+3. Type: _"What's in this image?"_ → Gemini describes the image.
+4. Ask: _"Is there text in the image?"_ → Bot uses the same uploaded image.
+
+Example 3: Context Reset
+
+1. Upload a document and ask questions.
+2. Click **New Chat** (sidebar or header button).
+3. Ask: _"What did I upload?"_ → Bot replies: _"No files uploaded yet."_
+
+Example 4: Multiple Chats
+
+- Use the **sidebar** to switch between multiple active chats.
+- Each chat has its own independent context, history, and uploads.
 
 
-
-<!-- API Endpoints (Backend) -->
+API Endpoints (Backend)
 
 | Method | Endpoint | Description |
 |---|---|---|
