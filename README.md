@@ -94,14 +94,14 @@ Example Usage
 
 Example 1: Document Q&A
 
-1. Click the 📄 **document button** in the input bar.
+1. Click the **document button** in the input bar.
 2. Select a PDF or TXT file (e.g. `notes.pdf`).
 3. Type: _"Summarize this document"_ → Gemini summarizes it.
 4. Ask a follow-up: _"What was the third point?"_ → Bot uses document context.
 
 Example 2: Image Analysis
 
-1. Click the 🖼️ **image button** in the input bar.
+1. Click the **image button** in the input bar.
 2. Select a PNG or JPG file.
 3. Type: _"What's in this image?"_ → Gemini describes the image.
 4. Ask: _"Is there text in the image?"_ → Bot uses the same uploaded image.
