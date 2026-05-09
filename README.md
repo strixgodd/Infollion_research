@@ -6,24 +6,12 @@ Supports text conversation, PDF/TXT document upload, image upload, multi-chat se
 
 Project structure
 
-gemini-chatbot/
-├── backend/               # Node.js + Express API server
-│   ├── server.js          # Main server (routes, Gemini integration, file handling)
-│   ├── package.json
-│   └── .env.example       # Template for your API key
-│
-├── frontend/              # React frontend
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── App.js         # Main chat UI component
-│   │   ├── App.css        # Full styling (dark terminal aesthetic)
-│   │   ├── api.js         # Axios helper for all backend calls
-│   │   ├── index.js       # React entry point
-│   │   └── index.css      # Global CSS reset & variables
-│   └── package.json
-│
-└── README.md
+The project is divided into two main parts: a backend and a frontend. The backend is built using Node.js and Express, and it handles the API routes, Gemini AI integration, chat session management, document and image uploads, and file processing. The main backend logic is written inside `server.js`, while `package.json` manages all backend dependencies. The `.env.example` file serves as a template for storing environment variables such as the Gemini API key.
+
+The frontend is built using React and contains the user interface of the chatbot. Inside the `public` folder, `index.html` acts as the base HTML page. The `src` folder contains the core frontend logic, where `App.js` manages the main chat interface, `App.css` handles the styling and dark terminal-like appearance, `api.js` manages communication with the backend APIs, `index.js` serves as the React entry point, and `index.css` contains global styles and CSS resets.
+
+At the root level, the project also contains a `README.md` file, which is used to describe the project setup, features, installation steps, and usage instructions.
+
 
 instructinos to get the gemini api key
 
